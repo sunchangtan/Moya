@@ -435,6 +435,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					528FF71D5A26E74522C484AD = {
+						LastSwiftMigration = 0900;
+					};
+					ED6C081A4AC105D3F62F3C49 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = CF2B188FD83B4489A8520824 /* Build configuration list for PBXProject "Moya" */;
 			compatibilityVersion = "Xcode 3.2";
