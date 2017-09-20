@@ -17,6 +17,9 @@
 		148FAF0DFB395B4A64314803 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A8C06CC9BA491AE62A431B /* ReactiveMoya.framework */; };
 		15D3A2BD1223B59E2BBE09F0 /* MoyaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47F3DC51C28D950491FAAB /* MoyaError.swift */; };
 		1FD44D9E21CEA6B6221807EF /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553E5591EE96535C5310C02 /* NetworkLoggerPlugin.swift */; };
+		22194E781F72DBA8005835E4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22194E791F72DBA8005835E4 /* Alamofire.framework */; };
+		22194E7C1F72DC05005835E4 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22194E7D1F72DC05005835E4 /* Result.framework */; };
+		22194E861F72DE6A005835E4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22194E871F72DE6A005835E4 /* RxSwift.framework */; };
 		2ADDFC96D7F7912333534C46 /* SignalProducer+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C64D1ABED61A91DD873D3 /* SignalProducer+Response.swift */; };
 		2C7132B56A7B129E12BAACAC /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825A32256FC030B8BA2684D /* EndpointSpec.swift */; };
 		312750ECEEBC68A508BFD681 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559D567FD0DA37D6CC98FF92 /* Moya.framework */; };
@@ -91,6 +94,9 @@
 		1446FBB21F214C5200C1EFF2 /* URL+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URL+Moya.swift"; path = "Sources/Moya/URL+Moya.swift"; sourceTree = "<group>"; };
 		147E26EB1F5B14B300C1F513 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Moya/Task.swift; sourceTree = "<group>"; };
 		14FB7A3E1F3E089900308949 /* Single+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Single+Response.swift"; path = "Sources/RxMoya/Single+Response.swift"; sourceTree = "<group>"; };
+		22194E791F72DBA8005835E4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22194E7D1F72DC05005835E4 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22194E871F72DE6A005835E4 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		225C397C03E17F7DFBCA2848 /* MoyaProvider+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Internal.swift"; path = "Sources/Moya/MoyaProvider+Internal.swift"; sourceTree = "<group>"; };
 		269C64D1ABED61A91DD873D3 /* SignalProducer+Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProducer+Response.swift"; path = "Sources/ReactiveMoya/SignalProducer+Response.swift"; sourceTree = "<group>"; };
 		2AD20F6A819D899E3278E903 /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityPlugin.swift; path = Sources/Moya/Plugins/NetworkActivityPlugin.swift; sourceTree = "<group>"; };
@@ -165,6 +171,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22194E7C1F72DC05005835E4 /* Result.framework in Frameworks */,
+				22194E781F72DBA8005835E4 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22194E861F72DE6A005835E4 /* RxSwift.framework in Frameworks */,
 				BA5EFFB8EE468F6BCA15480C /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +191,9 @@
 		0E7C5E12BDDF8CD3A778D84C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22194E871F72DE6A005835E4 /* RxSwift.framework */,
+				22194E7D1F72DC05005835E4 /* Result.framework */,
+				22194E791F72DBA8005835E4 /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -635,9 +647,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.Moya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -685,9 +697,9 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.RxMoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -821,9 +833,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.RxMoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -871,9 +883,9 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.ReactiveMoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -971,9 +983,9 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.Moya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1062,9 +1074,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.ReactiveMoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
