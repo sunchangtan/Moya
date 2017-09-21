@@ -16,6 +16,8 @@
 		147E26EC1F5B14B300C1F513 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E26EB1F5B14B300C1F513 /* Task.swift */; };
 		15D3A2BD1223B59E2BBE09F0 /* MoyaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47F3DC51C28D950491FAAB /* MoyaError.swift */; };
 		1FD44D9E21CEA6B6221807EF /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553E5591EE96535C5310C02 /* NetworkLoggerPlugin.swift */; };
+		229167C91F739E7D00F537D2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229167CA1F739E7D00F537D2 /* Result.framework */; };
+		229167CB1F739E8500F537D2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229167CA1F739E7D00F537D2 /* Result.framework */; };
 		2297FA7C1F738F0600DAEAC6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297FA7D1F738F0600DAEAC6 /* Alamofire.framework */; };
 		2297FA7E1F738F1100DAEAC6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297FA7F1F738F1100DAEAC6 /* RxSwift.framework */; };
 		2C7132B56A7B129E12BAACAC /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825A32256FC030B8BA2684D /* EndpointSpec.swift */; };
@@ -81,6 +83,7 @@
 		147E26EB1F5B14B300C1F513 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Moya/Task.swift; sourceTree = "<group>"; };
 		14FB7A3E1F3E089900308949 /* Single+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Single+Response.swift"; path = "Sources/RxMoya/Single+Response.swift"; sourceTree = "<group>"; };
 		225C397C03E17F7DFBCA2848 /* MoyaProvider+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Internal.swift"; path = "Sources/Moya/MoyaProvider+Internal.swift"; sourceTree = "<group>"; };
+		229167CA1F739E7D00F537D2 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2297FA7D1F738F0600DAEAC6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2297FA7F1F738F1100DAEAC6 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		269C64D1ABED61A91DD873D3 /* SignalProducer+Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProducer+Response.swift"; path = "Sources/ReactiveMoya/SignalProducer+Response.swift"; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229167C91F739E7D00F537D2 /* Result.framework in Frameworks */,
 				2297FA7C1F738F0600DAEAC6 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229167CB1F739E8500F537D2 /* Result.framework in Frameworks */,
 				2297FA7E1F738F1100DAEAC6 /* RxSwift.framework in Frameworks */,
 				BA5EFFB8EE468F6BCA15480C /* Moya.framework in Frameworks */,
 			);
@@ -165,6 +170,7 @@
 		0E7C5E12BDDF8CD3A778D84C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				229167CA1F739E7D00F537D2 /* Result.framework */,
 				2297FA7F1F738F1100DAEAC6 /* RxSwift.framework */,
 				2297FA7D1F738F0600DAEAC6 /* Alamofire.framework */,
 			);
