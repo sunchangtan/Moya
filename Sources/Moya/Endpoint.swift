@@ -124,6 +124,14 @@ extension Endpoint: Equatable, Hashable {
         return request?.hashValue ?? url.hashValue
     }
 
+    public func hash(into hasher: inout Hasher) {
+        if let request = try? urlRequest() {
+            request.hash(into: &hasher)
+        } else {
+            url.hash(into: &hasher)
+        }
+    }
+
     /// Note: If both Endpoints fail to produce a URLRequest the comparison will
     /// fall back to comparing each Endpoint's hashValue.
     public static func == (lhs: Endpoint, rhs: Endpoint) -> Bool {
