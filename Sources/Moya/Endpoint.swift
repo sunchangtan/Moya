@@ -119,11 +119,6 @@ extension Endpoint {
 
 /// Required for using `Endpoint` as a key type in a `Dictionary`.
 extension Endpoint: Equatable, Hashable {
-    public var hashValue: Int {
-        let request = try? urlRequest()
-        return request?.hashValue ?? url.hashValue
-    }
-
     public func hash(into hasher: inout Hasher) {
         if let request = try? urlRequest() {
             request.hash(into: &hasher)
